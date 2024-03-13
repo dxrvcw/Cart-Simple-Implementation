@@ -28,8 +28,55 @@ img {
 }
 
 .header__cart {
-	padding: 0 20px;
+	position: relative;;
+	width: 30px;
+	height: 30px;
+	background-image: url("img/shopping-cart.svg");
+	background-size: cover;
+	cursor: pointer;
+	border: 1px solid black;
+	
 }
+
+.header__cart-window {
+	position: absolute;
+	top: 70%;
+	right: 70%;
+	width: 300px;
+	height: fit-content;
+	min-height: 20px;
+	border: 1px solid black;
+	background-color: white;
+	cursor:default;
+}
+
+.cart-item {
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+	align-items: center;
+	height: 50px;
+	width: 100%;
+	padding-right: 10px;
+}
+
+.cart-item-image-container {
+	height: 50px;
+	width: 50px;
+	border-right: 1px solid black;
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.cart-item-text {
+	flex-basis: 100%;
+}
+
+.cart-item-title {
+	font-weight: 700;
+}
+
 
 .items-container {
 	margin-top: 50px;
