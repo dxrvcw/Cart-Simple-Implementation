@@ -16,7 +16,7 @@ function displayItem(item) {
           <p class="item-desc">${item.desc}</p>
           <div class="item-footer">
             <p class="item-price">${item.price}$</p>
-            <button class="item-add-btn" onclick="addItemToCart(${item.id})">Add to Cart</button>
+            <button class="item-add-btn" onclick="addItemToCart(${item.id})"><p class="item-add-btn-text">Add to Cart</button>
           </div>
         </div>
 			</div>
