@@ -27,7 +27,6 @@ async function renderItems() {
 	let itemsContainer = document.querySelector(".items-container");
 	itemsContainer.innerHTML = "";
 	const items = await getItemsFromApi();
-	console.log(items);
 	for (const item of items) {
 		itemsContainer.innerHTML += displayItem(item);
 	}

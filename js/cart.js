@@ -6,6 +6,7 @@ function addItemToCart(id) {
 		cart[id]++;
 	}
 	localStorage.setItem("cart", JSON.stringify(cart));
+	renderCart();
 }
 
 function getCart() {
@@ -14,6 +15,8 @@ function getCart() {
 
 function removeItemFromCart(id) {
 	let cart = JSON.parse(localStorage.getItem("cart"));
-	delete cart[id];
+	cart[id]--;
+	if (!cart[id]) delete cart[id];
 	localStorage.setItem("cart", JSON.stringify(cart));
+	renderCart();
 }
